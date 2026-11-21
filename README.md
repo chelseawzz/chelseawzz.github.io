@@ -1,21 +1,3 @@
-<!-- Put this file in the repo named after your username: chelseawzz/chelseawzz -->
-
-<div align="center">
-
-<!-- Banner: the file sakura-night.svg must be in the root of this repo -->
-<img src="https://raw.githubusercontent.com/chelseawzz/chelseawzz/main/sakura-night.svg" alt="CHELEE banner" width="100%" />
-
-<a href="https://github.com/chelseawzz">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=650&lines=Hey+there%2C+I'm+Chelee;Data+Science+Undergraduate;Turning+messy+data+into+clear+insights;Let's+check+my+projects" alt="Typing SVG" />
-</a>
-
-<br/>
-
-[**Portfolio**](https://chelseawzz.github.io/) &nbsp;|&nbsp; [**LinkedIn**](https://www.linkedin.com/in/novitachelsea) &nbsp;|&nbsp; [**Email**](mailto:chelsealodar11@gmail.com) &nbsp;|&nbsp; [**Instagram**](https://www.instagram.com/_chelseazz)
-
-</div>
-
----
 
 ## About Me
 
