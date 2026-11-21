@@ -3,112 +3,128 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CHELEE | Data Science Student</title>
-  <meta name="description" content="Portfolio of CHELEE, a Data Science student focused on data visualization, dashboard analytics and digital storytelling." />
-  <meta property="og:title" content="CHELEE | Data Science Student" />
-  <meta property="og:description" content="Dashboards, infographics and data-driven web projects." />
-  <meta name="theme-color" content="#0d0b24" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232d1f5e'/%3E%3Ctext x='32' y='44' font-size='36' font-family='Arial' font-weight='700' fill='%23f4a6c0' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E" />
+  <title>Chelee | Data Science Undergraduate</title>
+  <meta name="description" content="Portfolio of Chelee (Novita Chelsea Lodar), a Data Science undergraduate at Telkom University Surabaya (GPA 3.86/4.00) focused on data analysis, data visualization and digitalization." />
+  <meta property="og:title" content="Chelee | Data Science Undergraduate" />
+  <meta property="og:description" content="Dashboards, web systems and infographics that turn complex data into clear stories." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#fbfaf8" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2315131d'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
+
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a class="brand" href="#home">CHELEE</a>
+    <a class="brand" href="#top" aria-label="Chelee, back to top">Chelee</a>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu</button>
     <nav class="nav-links" id="navLinks" aria-label="Main">
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
+      <a href="#work">Work</a>
       <a href="#infographics">Infographics</a>
       <a href="#achievements">Achievements</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
-      <a class="btn btn-small" id="resumeNav" href="#" target="_blank" rel="noopener">Resume</a>
+      <a class="btn btn-dark btn-sm" id="resumeNav" href="#">Resume</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <section class="hero" id="home">
-    <img class="hero-bg" src="assets/scene.svg" alt="" />
-    <div class="hero-inner">
-      <img class="avatar" src="assets/img/avatar.jpg" alt="Portrait of Chelee" width="132" height="132" />
-      <p class="eyebrow">Hi, I'm</p>
-      <h1>CHELEE</h1>
-      <p class="typed-line"><span id="typed"></span><span class="caret"></span></p>
-      <p class="lead">I turn complex datasets into visual insights people can actually use, through dashboards, infographics and web-based analytics.</p>
-      <div class="cta">
-        <a class="btn" href="#projects">View my projects</a>
-        <a class="btn btn-ghost" id="resumeHero" href="#" target="_blank" rel="noopener">Resume</a>
-        <a class="btn btn-ghost" id="githubHero" href="#" target="_blank" rel="noopener">GitHub</a>
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Data Science Undergraduate</p>
+        <h1>I turn complex data into clear, useful stories.</h1>
+        <p class="lead">Hi, I'm Chelee. I design dashboards, build data-driven web systems and create infographics that help people make sense of numbers.</p>
+        <div class="cta">
+          <a class="btn btn-dark" href="#work">View my work</a>
+          <a class="btn btn-line" id="resumeHero" href="#">Resume</a>
+          <a class="btn btn-line" href="#contact">Get in touch</a>
+        </div>
+        <dl class="stats" id="stats"></dl>
       </div>
+      <figure class="hero-photo">
+        <span class="blob" aria-hidden="true"></span>
+        <img src="assets/img/hero.webp" alt="Portrait of Chelee" width="960" height="1200" fetchpriority="high" />
+        <figcaption>
+          <strong>Novita Chelsea Lodar</strong>
+          <span>S-1 Data Science, Telkom University Surabaya</span>
+        </figcaption>
+      </figure>
     </div>
-    <div class="hero-fade"></div>
   </section>
 
   <section class="section reveal" id="about">
     <div class="wrap about">
       <div>
-        <h2 class="section-title">About</h2>
-        <p>Data Science student focused on <strong>data visualization, dashboard analytics and digital storytelling</strong>.</p>
-        <p>I'm passionate about transforming complex datasets into meaningful visual insights through dashboards, infographics and web-based analytics solutions. I've built interactive dashboards, statistical visualizations and data-driven digital platforms through academic projects, competitions and internship experiences.</p>
+        <h2 class="title">About</h2>
+        <p class="big">Data Science undergraduate at Telkom University Surabaya with a GPA of 3.86/4.00.</p>
+        <p>I have hands-on experience in data analysis, data visualization and digitalization initiatives, with internships at PT ASABRI (Persero) and the Department of Marine and Fisheries of East Java Province.</p>
+        <p>I use Python, SQL, Tableau, Power BI and Looker Studio to turn data into insights that support decision-making. I also build web applications, integrate databases and develop interactive data visualization projects.</p>
       </div>
-      <dl class="facts">
-        <div><dt>Education</dt><dd>S-1 Data Science (Sains Data), Telkom University Surabaya</dd></div>
-        <div><dt>Focus</dt><dd>Data visualization, dashboard analytics, digital storytelling</dd></div>
-        <div><dt>Experience</dt><dd>Data Analyst &amp; Web Development Intern, Dinas Kelautan dan Perikanan Jawa Timur</dd></div>
-        <div><dt>Also</dt><dd>Competition winner, scholarship awardee, mentor and MC</dd></div>
-      </dl>
+      <div class="skills" id="skills"></div>
     </div>
   </section>
 
-  <section class="section reveal" id="projects">
+  <section class="section alt reveal" id="work">
     <div class="wrap">
-      <h2 class="section-title">Featured Projects</h2>
-      <p class="section-sub">Dashboards and web-based projects from academic work, competitions and internships. Click a card to open it.</p>
-      <div class="chips" id="projectFilters" role="tablist" aria-label="Filter projects"></div>
-      <div class="grid" id="projectGrid"></div>
+      <div class="head">
+        <div>
+          <h2 class="title">Selected Work</h2>
+          <p class="sub">Dashboards, web systems and analysis projects. Open any card for the full case study.</p>
+        </div>
+        <div class="chips" id="filters" role="group" aria-label="Filter projects"></div>
+      </div>
+      <div class="cards" id="projectGrid"></div>
     </div>
   </section>
 
   <section class="section reveal" id="infographics">
     <div class="wrap">
-      <h2 class="section-title">Infographic Gallery</h2>
-      <p class="section-sub">Infographics and visual communication projects built from statistical research and digital storytelling. Click to enlarge, use the arrow keys to browse.</p>
-      <div class="grid" id="infoGrid"></div>
+      <div class="head">
+        <div>
+          <h2 class="title">Infographic Gallery</h2>
+          <p class="sub">Visual communication projects built from statistical research and digital storytelling.</p>
+        </div>
+        <a class="btn btn-line" id="canvaBtn" href="#" target="_blank" rel="noopener">Open full collection on Canva</a>
+      </div>
+      <div class="info-grid" id="infoGrid"></div>
     </div>
   </section>
 
-  <section class="section reveal" id="achievements">
+  <section class="section alt reveal" id="achievements">
     <div class="wrap">
-      <h2 class="section-title">Achievements</h2>
-      <h3 class="sub-title">Competitions</h3>
-      <div class="grid" id="compGrid"></div>
-      <h3 class="sub-title">Scholarship, mentoring and speaking</h3>
-      <div class="grid" id="commGrid"></div>
+      <h2 class="title">Achievements</h2>
+      <p class="sub">Competitions, scholarships and community roles. Click a card to see the certificate.</p>
+      <h3 class="group">Competitions</h3>
+      <div class="cert-grid" id="compGrid"></div>
+      <h3 class="group">Scholarship, mentoring and speaking</h3>
+      <div class="cert-grid" id="commGrid"></div>
     </div>
   </section>
 
   <section class="section reveal" id="experience">
     <div class="wrap">
-      <h2 class="section-title">Experience</h2>
-      <div class="timeline" id="timeline"></div>
+      <h2 class="title">Experience</h2>
+      <div class="exp" id="exp"></div>
     </div>
   </section>
 
-  <section class="section reveal" id="contact">
-    <div class="wrap contact">
-      <h2 class="section-title">Let's work together</h2>
-      <p class="section-sub">Got a dataset, a dashboard idea or an event that needs a good MC? Hit me up.</p>
-      <div class="contact-links">
-        <a class="btn" id="emailBtn" href="#">Email me</a>
-        <a class="btn btn-ghost" id="linkedinBtn" href="#" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn btn-ghost" id="githubBtn" href="#" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn btn-ghost" id="instagramBtn" href="#" target="_blank" rel="noopener">Instagram</a>
+  <section class="section contact reveal" id="contact">
+    <div class="wrap">
+      <h2 class="big-title">Let's work together.</h2>
+      <p class="sub">Have a dataset, a dashboard idea or an event that needs a confident MC? Send me a message.</p>
+      <div class="cta center">
+        <a class="btn btn-dark" id="emailBtn" href="#">Email me</a>
+        <a class="btn btn-line" id="linkedinBtn" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-line" id="githubBtn" href="#" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-line" id="instagramBtn" href="#" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
   </section>
@@ -116,32 +132,41 @@
 
 <footer class="footer">
   <div class="wrap">
-    <span>&copy; <span id="year"></span> CHELEE</span>
-    <span>Built with HTML, CSS and JavaScript, hosted on GitHub Pages</span>
+    <span>&copy; <span id="year"></span> Chelee</span>
+    <span>Built with HTML, CSS and JavaScript. Hosted on GitHub Pages.</span>
   </div>
 </footer>
 
-<div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="mTitle">
-  <div class="modal-backdrop" data-close></div>
-  <div class="modal-card">
-    <button class="modal-x" data-close aria-label="Close">Close</button>
-    <div class="modal-media" id="mMedia"></div>
-    <div class="modal-body">
-      <span class="badge" id="mBadge"></span>
-      <h3 id="mTitle"></h3>
-      <p class="meta" id="mMeta"></p>
-      <p id="mDesc"></p>
-      <p class="tools" id="mTools"></p>
-      <div class="modal-links" id="mLinks"></div>
-      <div class="modal-nav">
-        <button class="btn btn-ghost btn-small" id="mPrev">Previous</button>
-        <span id="mCount"></span>
-        <button class="btn btn-ghost btn-small" id="mNext">Next</button>
+<!-- Case study panel -->
+<div class="case" id="case" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="csTitle">
+  <div class="case-bar">
+    <button class="link-btn" id="csBack">&larr; Back to work</button>
+    <div class="case-step">
+      <button class="link-btn" id="csPrev">Previous</button>
+      <button class="link-btn" id="csNext">Next</button>
+    </div>
+  </div>
+  <article class="case-body" id="csBody"></article>
+</div>
+
+<!-- Image viewer -->
+<div class="viewer" id="viewer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="viewer-backdrop" data-close></div>
+  <div class="viewer-card">
+    <button class="viewer-x" data-close aria-label="Close viewer">Close</button>
+    <div class="viewer-stage"><img id="vImg" alt="" /></div>
+    <div class="viewer-foot">
+      <p id="vCap"></p>
+      <div class="viewer-nav">
+        <button class="link-btn" id="vPrev">Previous</button>
+        <span id="vCount"></span>
+        <button class="link-btn" id="vNext">Next</button>
       </div>
     </div>
   </div>
 </div>
 
+<noscript><p style="padding:24px">This portfolio needs JavaScript to display its content.</p></noscript>
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
 </body>
