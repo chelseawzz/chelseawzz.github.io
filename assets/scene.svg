@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#0d0b24"/><stop offset="0.5" stop-color="#2d1f5e"/><stop offset="0.8" stop-color="#7a4a8f"/><stop offset="1" stop-color="#f0a2bd"/>
+</linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff6d6" stop-opacity="0.85"/><stop offset="1" stop-color="#fff6d6" stop-opacity="0"/></radialGradient>
+<path id="petal" d="M0,-7 C5,-7 8,-2 5,3 C3,6 1,7 0,5 C-1,7 -3,6 -5,3 C-8,-2 -5,-7 0,-7 Z" fill="#ffc2d9"/>
+<style>
+.star{animation:tw 3.4s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:1}}
+.fall{animation-name:fall;animation-iteration-count:infinite;animation-timing-function:linear}
+@keyframes fall{0%{transform:translate(0,-40px) rotate(0deg);opacity:0}8%{opacity:.95}50%{transform:translate(60px,460px) rotate(220deg)}100%{transform:translate(-30px,960px) rotate(440deg);opacity:0}}
+.moon{animation:float 7s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+</style></defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<circle class="star" cx="936" cy="291" r="1.1" fill="#fff" style="animation-delay:1.54s"/>
+<circle class="star" cx="1212" cy="102" r="0.8" fill="#fff" style="animation-delay:2.73s"/>
+<circle class="star" cx="984" cy="327" r="1.6" fill="#fff" style="animation-delay:2.7s"/>
+<circle class="star" cx="202" cy="233" r="1.1" fill="#fff" style="animation-delay:0.48s"/>
+<circle class="star" cx="1113" cy="419" r="1.6" fill="#fff" style="animation-delay:2.16s"/>
+<circle class="star" cx="1229" cy="207" r="1.1" fill="#fff" style="animation-delay:2.22s"/>
+<circle class="star" cx="1270" cy="337" r="0.8" fill="#fff" style="animation-delay:2.12s"/>
+<circle class="star" cx="1092" cy="37" r="0.8" fill="#fff" style="animation-delay:0.12s"/>
+<circle class="star" cx="505" cy="312" r="0.8" fill="#fff" style="animation-delay:2.65s"/>
+<circle class="star" cx="678" cy="230" r="1.6" fill="#fff" style="animation-delay:2.86s"/>
+<circle class="star" cx="1073" cy="124" r="1.6" fill="#fff" style="animation-delay:1.0s"/>
+<circle class="star" cx="19" cy="344" r="0.8" fill="#fff" style="animation-delay:1.55s"/>
+<circle class="star" cx="579" cy="213" r="1.6" fill="#fff" style="animation-delay:3.39s"/>
+<circle class="star" cx="180" cy="367" r="1.1" fill="#fff" style="animation-delay:1.07s"/>
+<circle class="star" cx="480" cy="267" r="1.1" fill="#fff" style="animation-delay:0.1s"/>
+<circle class="star" cx="1163" cy="397" r="0.8" fill="#fff" style="animation-delay:1.36s"/>
+<circle class="star" cx="605" cy="202" r="0.8" fill="#fff" style="animation-delay:3.26s"/>
+<circle class="star" cx="1412" cy="5" r="0.8" fill="#fff" style="animation-delay:0.71s"/>
+<circle class="star" cx="117" cy="245" r="1.1" fill="#fff" style="animation-delay:3.33s"/>
+<circle class="star" cx="823" cy="219" r="0.8" fill="#fff" style="animation-delay:1.93s"/>
+<circle class="star" cx="416" cy="403" r="1.6" fill="#fff" style="animation-delay:0.92s"/>
+<circle class="star" cx="188" cy="164" r="1.1" fill="#fff" style="animation-delay:0.05s"/>
+<circle class="star" cx="849" cy="393" r="0.8" fill="#fff" style="animation-delay:0.46s"/>
+<circle class="star" cx="1457" cy="56" r="0.8" fill="#fff" style="animation-delay:0.2s"/>
+<circle class="star" cx="1007" cy="95" r="1.6" fill="#fff" style="animation-delay:1.9s"/>
+<circle class="star" cx="926" cy="265" r="0.8" fill="#fff" style="animation-delay:3.35s"/>
+<circle class="star" cx="1585" cy="72" r="1.1" fill="#fff" style="animation-delay:2.19s"/>
+<circle class="star" cx="248" cy="207" r="1.1" fill="#fff" style="animation-delay:3.37s"/>
+<circle class="star" cx="10" cy="143" r="1.6" fill="#fff" style="animation-delay:1.03s"/>
+<circle class="star" cx="50" cy="112" r="0.8" fill="#fff" style="animation-delay:1.34s"/>
+<circle class="star" cx="1242" cy="333" r="1.6" fill="#fff" style="animation-delay:0.34s"/>
+<circle class="star" cx="309" cy="114" r="1.1" fill="#fff" style="animation-delay:0.88s"/>
+<circle class="star" cx="1259" cy="173" r="1.1" fill="#fff" style="animation-delay:1.31s"/>
+<circle class="star" cx="162" cy="51" r="0.8" fill="#fff" style="animation-delay:1.98s"/>
+<circle class="star" cx="507" cy="12" r="1.6" fill="#fff" style="animation-delay:1.25s"/>
+<circle class="star" cx="1284" cy="237" r="0.8" fill="#fff" style="animation-delay:3.26s"/>
+<circle class="star" cx="1000" cy="299" r="0.8" fill="#fff" style="animation-delay:2.95s"/>
+<circle class="star" cx="384" cy="326" r="0.8" fill="#fff" style="animation-delay:1.06s"/>
+<circle class="star" cx="477" cy="317" r="0.8" fill="#fff" style="animation-delay:2.47s"/>
+<circle class="star" cx="334" cy="383" r="1.6" fill="#fff" style="animation-delay:3.2s"/>
+<circle class="star" cx="412" cy="356" r="1.1" fill="#fff" style="animation-delay:3.0s"/>
+<circle class="star" cx="1246" cy="45" r="1.1" fill="#fff" style="animation-delay:0.16s"/>
+<circle class="star" cx="233" cy="24" r="1.6" fill="#fff" style="animation-delay:3.27s"/>
+<circle class="star" cx="498" cy="383" r="1.6" fill="#fff" style="animation-delay:1.33s"/>
+<circle class="star" cx="871" cy="310" r="1.1" fill="#fff" style="animation-delay:1.0s"/>
+<circle class="star" cx="369" cy="373" r="0.8" fill="#fff" style="animation-delay:0.43s"/>
+<circle class="star" cx="991" cy="291" r="1.6" fill="#fff" style="animation-delay:2.9s"/>
+<circle class="star" cx="1268" cy="42" r="1.1" fill="#fff" style="animation-delay:0.72s"/>
+<circle class="star" cx="427" cy="388" r="0.8" fill="#fff" style="animation-delay:0.24s"/>
+<circle class="star" cx="852" cy="233" r="0.8" fill="#fff" style="animation-delay:0.21s"/>
+<circle class="star" cx="370" cy="149" r="1.1" fill="#fff" style="animation-delay:1.81s"/>
+<circle class="star" cx="279" cy="52" r="1.1" fill="#fff" style="animation-delay:0.47s"/>
+<circle class="star" cx="932" cy="174" r="1.6" fill="#fff" style="animation-delay:2.49s"/>
+<circle class="star" cx="1078" cy="304" r="0.8" fill="#fff" style="animation-delay:2.01s"/>
+<circle class="star" cx="46" cy="248" r="1.1" fill="#fff" style="animation-delay:2.38s"/>
+<circle class="star" cx="78" cy="15" r="1.6" fill="#fff" style="animation-delay:2.16s"/>
+<circle class="star" cx="997" cy="39" r="1.6" fill="#fff" style="animation-delay:1.06s"/>
+<circle class="star" cx="289" cy="42" r="0.8" fill="#fff" style="animation-delay:1.54s"/>
+<circle class="star" cx="763" cy="382" r="0.8" fill="#fff" style="animation-delay:3.06s"/>
+<circle class="star" cx="1519" cy="382" r="1.6" fill="#fff" style="animation-delay:0.44s"/>
+<circle class="star" cx="709" cy="185" r="0.8" fill="#fff" style="animation-delay:2.33s"/>
+<circle class="star" cx="169" cy="218" r="0.8" fill="#fff" style="animation-delay:2.94s"/>
+<circle class="star" cx="1183" cy="12" r="1.6" fill="#fff" style="animation-delay:2.25s"/>
+<circle class="star" cx="786" cy="303" r="0.8" fill="#fff" style="animation-delay:2.07s"/>
+<circle class="star" cx="174" cy="51" r="1.6" fill="#fff" style="animation-delay:0.39s"/>
+<circle class="star" cx="536" cy="218" r="1.6" fill="#fff" style="animation-delay:1.12s"/>
+<circle class="star" cx="1515" cy="360" r="1.6" fill="#fff" style="animation-delay:1.56s"/>
+<circle class="star" cx="957" cy="282" r="0.8" fill="#fff" style="animation-delay:1.76s"/>
+<circle class="star" cx="1063" cy="20" r="1.1" fill="#fff" style="animation-delay:2.04s"/>
+<circle class="star" cx="994" cy="16" r="0.8" fill="#fff" style="animation-delay:3.26s"/>
+<circle class="star" cx="241" cy="259" r="1.6" fill="#fff" style="animation-delay:2.24s"/>
+<circle class="star" cx="1005" cy="135" r="0.8" fill="#fff" style="animation-delay:1.25s"/>
+<circle class="star" cx="303" cy="352" r="1.6" fill="#fff" style="animation-delay:0.69s"/>
+<circle class="star" cx="357" cy="390" r="1.1" fill="#fff" style="animation-delay:2.24s"/>
+<circle class="star" cx="915" cy="260" r="0.8" fill="#fff" style="animation-delay:1.11s"/>
+<circle class="star" cx="1373" cy="133" r="0.8" fill="#fff" style="animation-delay:2.16s"/>
+<circle class="star" cx="1555" cy="107" r="0.8" fill="#fff" style="animation-delay:1.31s"/>
+<circle class="star" cx="1204" cy="167" r="0.8" fill="#fff" style="animation-delay:0.46s"/>
+<circle class="star" cx="1026" cy="184" r="0.8" fill="#fff" style="animation-delay:2.42s"/>
+<circle class="star" cx="576" cy="91" r="0.8" fill="#fff" style="animation-delay:1.53s"/>
+<circle class="star" cx="573" cy="114" r="1.1" fill="#fff" style="animation-delay:1.3s"/>
+<circle class="star" cx="1074" cy="257" r="1.6" fill="#fff" style="animation-delay:1.07s"/>
+<circle class="star" cx="1289" cy="236" r="1.1" fill="#fff" style="animation-delay:0.25s"/>
+<circle class="star" cx="74" cy="147" r="1.6" fill="#fff" style="animation-delay:0.14s"/>
+<circle class="star" cx="1461" cy="148" r="1.6" fill="#fff" style="animation-delay:1.2s"/>
+<circle class="star" cx="1339" cy="410" r="1.6" fill="#fff" style="animation-delay:0.06s"/>
+<circle class="star" cx="288" cy="212" r="1.1" fill="#fff" style="animation-delay:0.65s"/>
+<circle class="star" cx="1585" cy="141" r="0.8" fill="#fff" style="animation-delay:2.65s"/>
+<circle class="star" cx="106" cy="327" r="0.8" fill="#fff" style="animation-delay:1.52s"/>
+<circle class="star" cx="1300" cy="279" r="1.6" fill="#fff" style="animation-delay:2.18s"/>
+<circle class="star" cx="765" cy="44" r="1.6" fill="#fff" style="animation-delay:0.67s"/>
+<circle class="star" cx="983" cy="136" r="0.8" fill="#fff" style="animation-delay:2.43s"/>
+<circle class="star" cx="1556" cy="246" r="1.6" fill="#fff" style="animation-delay:2.43s"/>
+<circle class="star" cx="376" cy="120" r="1.1" fill="#fff" style="animation-delay:2.65s"/>
+<circle class="star" cx="1115" cy="362" r="1.6" fill="#fff" style="animation-delay:1.7s"/>
+<circle class="star" cx="1558" cy="86" r="1.1" fill="#fff" style="animation-delay:2.89s"/>
+<circle class="star" cx="1443" cy="119" r="0.8" fill="#fff" style="animation-delay:1.4s"/>
+<circle class="star" cx="1489" cy="203" r="0.8" fill="#fff" style="animation-delay:1.53s"/>
+<circle class="star" cx="413" cy="325" r="0.8" fill="#fff" style="animation-delay:1.28s"/>
+<circle class="star" cx="1174" cy="339" r="1.6" fill="#fff" style="animation-delay:2.71s"/>
+<circle class="star" cx="712" cy="242" r="1.1" fill="#fff" style="animation-delay:2.21s"/>
+<circle class="star" cx="429" cy="55" r="1.6" fill="#fff" style="animation-delay:2.94s"/>
+<circle class="star" cx="1324" cy="372" r="0.8" fill="#fff" style="animation-delay:0.73s"/>
+<circle class="star" cx="809" cy="49" r="1.1" fill="#fff" style="animation-delay:1.83s"/>
+<circle class="star" cx="666" cy="139" r="1.6" fill="#fff" style="animation-delay:2.91s"/>
+<circle class="star" cx="723" cy="263" r="0.8" fill="#fff" style="animation-delay:0.13s"/>
+<circle class="star" cx="710" cy="286" r="1.1" fill="#fff" style="animation-delay:2.61s"/>
+<circle class="star" cx="1008" cy="19" r="0.8" fill="#fff" style="animation-delay:2.75s"/>
+<circle class="star" cx="141" cy="224" r="0.8" fill="#fff" style="animation-delay:0.59s"/>
+<circle class="star" cx="696" cy="356" r="0.8" fill="#fff" style="animation-delay:1.6s"/>
+<g class="moon"><circle cx="1270" cy="230" r="170" fill="url(#glow)"/><circle cx="1270" cy="230" r="78" fill="#fff6d6"/><circle cx="1246" cy="212" r="12" fill="#f1e3b5"/><circle cx="1296" cy="256" r="9" fill="#f1e3b5"/><circle cx="1282" cy="198" r="6" fill="#f1e3b5"/></g>
+<path d="M0,900 L0,640 Q260,560 520,650 T1040,630 T1600,660 L1600,900 Z" fill="#43307a" opacity="0.9"/>
+<path d="M0,900 L0,730 Q330,670 700,740 T1600,715 L1600,900 Z" fill="#2a1d54"/>
+<path d="M0,900 L0,810 Q400,770 800,820 T1600,800 L1600,900 Z" fill="#170f33"/>
+<g fill="#0f0a24"><rect x="226" y="610" width="14" height="150"/><rect x="326" y="610" width="14" height="150"/><path d="M190,604 Q283,584 376,604 L376,620 Q283,600 190,620 Z"/><rect x="214" y="638" width="138" height="9"/></g>
+<g transform="translate(1057,0) scale(1.88)"><g class="fall" style="animation-duration:13.1s;animation-delay:-5.5s"><use href="#petal"/></g></g>
+<g transform="translate(901,0) scale(1.93)"><g class="fall" style="animation-duration:12.9s;animation-delay:-0.9s"><use href="#petal"/></g></g>
+<g transform="translate(176,0) scale(1.71)"><g class="fall" style="animation-duration:12.5s;animation-delay:-7.5s"><use href="#petal"/></g></g>
+<g transform="translate(1492,0) scale(1.47)"><g class="fall" style="animation-duration:10.3s;animation-delay:-8.3s"><use href="#petal"/></g></g>
+<g transform="translate(1146,0) scale(1.11)"><g class="fall" style="animation-duration:14.4s;animation-delay:-0.8s"><use href="#petal"/></g></g>
+<g transform="translate(1248,0) scale(1.05)"><g class="fall" style="animation-duration:15.8s;animation-delay:-0.5s"><use href="#petal"/></g></g>
+<g transform="translate(1073,0) scale(1.13)"><g class="fall" style="animation-duration:13.0s;animation-delay:-10.0s"><use href="#petal"/></g></g>
+<g transform="translate(234,0) scale(1.4)"><g class="fall" style="animation-duration:13.8s;animation-delay:-16.5s"><use href="#petal"/></g></g>
+<g transform="translate(90,0) scale(1.42)"><g class="fall" style="animation-duration:12.2s;animation-delay:-3.4s"><use href="#petal"/></g></g>
+<g transform="translate(1152,0) scale(0.95)"><g class="fall" style="animation-duration:9.7s;animation-delay:-14.2s"><use href="#petal"/></g></g>
+<g transform="translate(1103,0) scale(1.35)"><g class="fall" style="animation-duration:16.4s;animation-delay:-3.4s"><use href="#petal"/></g></g>
+<g transform="translate(827,0) scale(1.12)"><g class="fall" style="animation-duration:12.8s;animation-delay:-14.8s"><use href="#petal"/></g></g>
+<g transform="translate(888,0) scale(1.88)"><g class="fall" style="animation-duration:16.5s;animation-delay:-1.4s"><use href="#petal"/></g></g>
+<g transform="translate(1075,0) scale(1.18)"><g class="fall" style="animation-duration:10.5s;animation-delay:-6.5s"><use href="#petal"/></g></g>
+<g transform="translate(532,0) scale(0.96)"><g class="fall" style="animation-duration:15.2s;animation-delay:-16.6s"><use href="#petal"/></g></g>
+<g transform="translate(397,0) scale(0.99)"><g class="fall" style="animation-duration:9.1s;animation-delay:-12.2s"><use href="#petal"/></g></g>
+<g transform="translate(1481,0) scale(1.23)"><g class="fall" style="animation-duration:14.0s;animation-delay:-15.2s"><use href="#petal"/></g></g>
+<g transform="translate(1496,0) scale(1.5)"><g class="fall" style="animation-duration:15.8s;animation-delay:-6.4s"><use href="#petal"/></g></g>
+<g transform="translate(1469,0) scale(1.04)"><g class="fall" style="animation-duration:13.2s;animation-delay:-9.6s"><use href="#petal"/></g></g>
+<g transform="translate(769,0) scale(1.56)"><g class="fall" style="animation-duration:15.6s;animation-delay:-6.5s"><use href="#petal"/></g></g>
+<g transform="translate(1102,0) scale(1.05)"><g class="fall" style="animation-duration:14.1s;animation-delay:-6.1s"><use href="#petal"/></g></g>
+<g transform="translate(1084,0) scale(1.06)"><g class="fall" style="animation-duration:13.3s;animation-delay:-7.0s"><use href="#petal"/></g></g>
+<g transform="translate(279,0) scale(1.08)"><g class="fall" style="animation-duration:14.9s;animation-delay:-3.2s"><use href="#petal"/></g></g>
+<g transform="translate(370,0) scale(1.18)"><g class="fall" style="animation-duration:11.5s;animation-delay:-1.3s"><use href="#petal"/></g></g>
+<g transform="translate(446,0) scale(1.73)"><g class="fall" style="animation-duration:10.6s;animation-delay:-15.4s"><use href="#petal"/></g></g>
+<g transform="translate(490,0) scale(0.96)"><g class="fall" style="animation-duration:9.7s;animation-delay:-10.4s"><use href="#petal"/></g></g>
+<g transform="translate(890,0) scale(1.8)"><g class="fall" style="animation-duration:12.4s;animation-delay:-3.6s"><use href="#petal"/></g></g>
+<g transform="translate(258,0) scale(1.04)"><g class="fall" style="animation-duration:14.0s;animation-delay:-3.4s"><use href="#petal"/></g></g>
+<g transform="translate(196,0) scale(1.04)"><g class="fall" style="animation-duration:14.5s;animation-delay:-1.5s"><use href="#petal"/></g></g>
+<g transform="translate(739,0) scale(0.94)"><g class="fall" style="animation-duration:13.0s;animation-delay:-4.1s"><use href="#petal"/></g></g>
+<g transform="translate(1029,0) scale(2.0)"><g class="fall" style="animation-duration:15.7s;animation-delay:-3.4s"><use href="#petal"/></g></g>
+<g transform="translate(987,0) scale(0.93)"><g class="fall" style="animation-duration:9.3s;animation-delay:-7.6s"><use href="#petal"/></g></g>
+<g transform="translate(1054,0) scale(1.89)"><g class="fall" style="animation-duration:12.9s;animation-delay:-13.8s"><use href="#petal"/></g></g>
+<g transform="translate(235,0) scale(1.04)"><g class="fall" style="animation-duration:15.7s;animation-delay:-0.2s"><use href="#petal"/></g></g>
+<g transform="translate(1378,0) scale(0.91)"><g class="fall" style="animation-duration:9.5s;animation-delay:-0.8s"><use href="#petal"/></g></g>
+<g transform="translate(946,0) scale(0.89)"><g class="fall" style="animation-duration:9.8s;animation-delay:-10.4s"><use href="#petal"/></g></g>
+<g transform="translate(873,0) scale(1.42)"><g class="fall" style="animation-duration:12.4s;animation-delay:-6.8s"><use href="#petal"/></g></g>
+<g transform="translate(27,0) scale(1.56)"><g class="fall" style="animation-duration:9.3s;animation-delay:-13.6s"><use href="#petal"/></g></g>
+<g transform="translate(835,0) scale(1.34)"><g class="fall" style="animation-duration:14.9s;animation-delay:-10.1s"><use href="#petal"/></g></g>
+<g transform="translate(399,0) scale(1.53)"><g class="fall" style="animation-duration:9.8s;animation-delay:-3.5s"><use href="#petal"/></g></g>
+<g transform="translate(662,0) scale(1.87)"><g class="fall" style="animation-duration:15.4s;animation-delay:-5.0s"><use href="#petal"/></g></g>
+<g transform="translate(1288,0) scale(1.93)"><g class="fall" style="animation-duration:13.6s;animation-delay:-13.8s"><use href="#petal"/></g></g>
+<g transform="translate(1197,0) scale(1.98)"><g class="fall" style="animation-duration:15.4s;animation-delay:-12.6s"><use href="#petal"/></g></g>
+<g transform="translate(238,0) scale(1.69)"><g class="fall" style="animation-duration:15.2s;animation-delay:-3.2s"><use href="#petal"/></g></g>
+<g transform="translate(830,0) scale(0.96)"><g class="fall" style="animation-duration:11.6s;animation-delay:-7.8s"><use href="#petal"/></g></g>
+<g transform="translate(757,0) scale(1.72)"><g class="fall" style="animation-duration:15.1s;animation-delay:-10.1s"><use href="#petal"/></g></g>
+</svg>
