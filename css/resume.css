@@ -1,4 +1,4 @@
-:root { --ink: #16141f; --muted: #626075; --line: #e3e0ea; --accent: #4b3fd1; }
+:root { --ink: #16141f; --muted: #626075; --line: #e3e0ea; --accent: #1d4fd8; }
 * { box-sizing: border-box; }
 body { margin: 0; background: #ecebf0; color: var(--ink); font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }

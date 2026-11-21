@@ -4,18 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chelee | Data Science Undergraduate</title>
-  <meta name="description" content="Portfolio of Chelee (Novita Chelsea Lodar), a Data Science undergraduate at Telkom University Surabaya (GPA 3.86/4.00) focused on data analysis, data visualization and digitalization." />
+  <meta name="description" content="Portfolio of Chelee (Novita Chelsea Lodar), a Data Science undergraduate at Telkom University Surabaya focused on data analysis, data visualization and digitalization." />
   <meta property="og:title" content="Chelee | Data Science Undergraduate" />
   <meta property="og:description" content="Dashboards, web systems and infographics that turn complex data into clear stories." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#fbfaf8" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2315131d'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#050a1c" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232a62f5'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css?v=20261121" />
 </head>
 <body>
+<div class="progress" aria-hidden="true"><i id="progress"></i></div>
 
 <a class="skip" href="#main">Skip to content</a>
 
@@ -39,23 +40,19 @@
   <section class="hero" id="top">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Data Science Undergraduate</p>
-        <h1>I turn complex data into clear, useful stories.</h1>
-        <p class="lead">Hi, I'm Chelee. I design dashboards, build data-driven web systems and create infographics that help people make sense of numbers.</p>
-        <div class="cta">
+        <p class="eyebrow rise">Data Science Undergraduate</p>
+        <h1 class="rise" style="--i:1">I turn complex data into clear, useful stories.</h1>
+        <p class="lead rise" style="--i:2">Hi, I'm Novita Chelsea Lodar (Chelee). I design dashboards, build data-driven web systems and create infographics that help people make sense of numbers.</p>
+        <div class="cta rise" style="--i:3">
           <a class="btn btn-dark" href="#work">View my work</a>
           <a class="btn btn-line" id="resumeHero" href="#">Resume</a>
           <a class="btn btn-line" href="#contact">Get in touch</a>
         </div>
-        <dl class="stats" id="stats"></dl>
+        <dl class="stats rise" style="--i:4" id="stats"></dl>
       </div>
       <figure class="hero-photo">
         <span class="blob" aria-hidden="true"></span>
         <img src="assets/img/hero.webp" alt="Portrait of Chelee" width="960" height="1200" fetchpriority="high" />
-        <figcaption>
-          <strong>Novita Chelsea Lodar</strong>
-          <span>S-1 Data Science, Telkom University Surabaya</span>
-        </figcaption>
       </figure>
     </div>
   </section>
@@ -64,7 +61,7 @@
     <div class="wrap about">
       <div>
         <h2 class="title">About</h2>
-        <p class="big">Data Science undergraduate at Telkom University Surabaya with a GPA of 3.86/4.00.</p>
+        <p class="big">Data Science undergraduate at Telkom University Surabaya.</p>
         <p>I have hands-on experience in data analysis, data visualization and digitalization initiatives, with internships at PT ASABRI (Persero) and the Department of Marine and Fisheries of East Java Province.</p>
         <p>I use Python, SQL, Tableau, Power BI and Looker Studio to turn data into insights that support decision-making. I also build web applications, integrate databases and develop interactive data visualization projects.</p>
       </div>
@@ -95,6 +92,9 @@
         <a class="btn btn-line" id="canvaBtn" href="#" target="_blank" rel="noopener">Open full collection on Canva</a>
       </div>
       <div class="info-grid" id="infoGrid"></div>
+      <div class="embed rise" aria-label="All infographics on Canva">
+        <div class="embed-frame"><iframe id="canvaEmbed" title="Infographic collection on Canva" loading="lazy" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe></div>
+      </div>
     </div>
   </section>
 
@@ -132,7 +132,7 @@
 
 <footer class="footer">
   <div class="wrap">
-    <span>&copy; <span id="year"></span> Chelee</span>
+    <span>&copy; <span id="year"></span> Novita Chelsea Lodar</span>
     <span>Built with HTML, CSS and JavaScript. Hosted on GitHub Pages.</span>
   </div>
 </footer>
@@ -156,7 +156,6 @@
     <button class="viewer-x" data-close aria-label="Close viewer">Close</button>
     <div class="viewer-stage"><img id="vImg" alt="" /></div>
     <div class="viewer-foot">
-      <p id="vCap"></p>
       <div class="viewer-nav">
         <button class="link-btn" id="vPrev">Previous</button>
         <span id="vCount"></span>

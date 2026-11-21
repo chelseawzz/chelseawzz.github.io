@@ -18,11 +18,11 @@
   $("#year").textContent = new Date().getFullYear();
 
   $("#stats").innerHTML = [
-    [S.cv.education.gpa.split("/")[0], "GPA"],
     [S.projects.length, "Projects"],
     [S.infographics.length, "Infographics"],
+    [S.cv.work.length, "Internships"],
     [S.cv.achievements.length, "Awards"]
-  ].map(function (s) { return "<div><dt>" + s[1] + "</dt><dd>" + s[0] + "</dd></div>"; }).join("");
+  ].map(function (s) { return '<div><dt>' + s[1] + '</dt><dd data-count="' + s[0] + '">' + s[0] + "</dd></div>"; }).join("");
 
   $("#skills").innerHTML = S.skills.map(function (g) {
     return '<div class="skill"><h4>' + esc(g.group) + '</h4><div class="tags">' +
@@ -34,13 +34,18 @@
   var vs = { list: [], i: 0, opener: null };
   function vRender() {
     var it = vs.list[vs.i];
-    var img = $("#vImg"); img.src = it.src; img.alt = it.caption || "";
-    $("#vCap").textContent = it.caption || "";
+    var img = $("#vImg"), stage = $(".viewer-stage");
+    stage.classList.remove("fit", "fitall"); stage.scrollTop = 0;
+    img.onload = function () { stage.classList.toggle("fit", img.naturalWidth / img.naturalHeight > 1.15); };
+    var chain = (it.chain || [it.src]).slice(), k = 0;
+    img.onerror = function () { k++; if (k < chain.length) img.src = chain[k]; };
+    img.src = chain[0]; img.alt = it.alt || "";
     var many = vs.list.length > 1;
     $("#vCount").textContent = many ? vs.i + 1 + " / " + vs.list.length : "";
     $("#vPrev").style.visibility = many ? "visible" : "hidden";
     $("#vNext").style.visibility = many ? "visible" : "hidden";
   }
+  $("#vImg").addEventListener("click", function () { $(".viewer-stage").classList.toggle("fitall"); });
   function openViewer(list, i, opener) {
     vs.list = list; vs.i = i; vs.opener = opener || document.activeElement;
     vRender();
@@ -79,6 +84,8 @@
   function showProjects(type) {
     var list = S.projects.filter(function (p) { return type === "All" || p.type === type; });
     pgrid.innerHTML = list.map(projectCard).join("");
+    Array.prototype.forEach.call(pgrid.children, function (c, i) { c.classList.add("rise"); c.style.setProperty("--i", i); });
+    requestAnimationFrame(function () { requestAnimationFrame(function () { Array.prototype.forEach.call(pgrid.children, function (c) { c.classList.add("in"); }); }); });
   }
   pgrid.addEventListener("click", function (e) {
     var b = e.target.closest(".pcard");
@@ -184,19 +191,30 @@
 
   /* ---------- infographics ---------- */
   (function () {
-    var list = S.infographics.map(function (g) { return { src: g.img, caption: g.title + "  |  " + g.tag }; });
+    function chainOf(g) { return [].concat(g.full || [], g.img); }
+    var list = S.infographics.map(function (g) { var c = chainOf(g); return { src: c[0], chain: c, alt: g.title }; });
     var grid = $("#infoGrid");
     grid.innerHTML = S.infographics.map(function (g, i) {
-      return '<button class="icard" type="button" data-i="' + i + '"><div class="media"><img src="' + esc(g.img) + '" alt="' + esc(g.title) + '" loading="lazy" /></div>' +
-        '<div class="body"><span class="kind">' + esc(g.tag) + "</span><h3>" + esc(g.title) + "</h3></div></button>";
+      return '<button class="icard" type="button" data-i="' + i + '" aria-label="Open infographic: ' + esc(g.title) + '"><div class="media"><img src="' + esc(chainOf(g)[0]) + '" alt="' + esc(g.title) + '" loading="lazy" /></div></button>';
     }).join("");
+    grid.querySelectorAll("img").forEach(function (im, i) {
+      var c = chainOf(S.infographics[i]), k = 0;
+      im.addEventListener("error", function () { k++; if (k < c.length) im.src = c[k]; });
+    });
     grid.onclick = function (e) { var b = e.target.closest(".icard"); if (b) openViewer(list, +b.getAttribute("data-i"), b); };
+    var fr = $("#canvaEmbed");
+    if (fr && S.links.canvaEmbed) {
+      if ("IntersectionObserver" in window) {
+        var eo = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { fr.src = S.links.canvaEmbed; eo.disconnect(); } }, { rootMargin: "300px" });
+        eo.observe(fr);
+      } else fr.src = S.links.canvaEmbed;
+    }
   })();
 
   /* ---------- achievements ---------- */
   function certGrid(sel, items) {
     var withImg = items.filter(function (a) { return a.img; });
-    var viewList = withImg.map(function (a) { return { src: a.img, caption: a.title + "  |  " + a.org + (a.date ? "  |  " + a.date : "") }; });
+    var viewList = withImg.map(function (a) { return { src: a.img, alt: a.title }; });
     var grid = $(sel);
     grid.innerHTML = items.map(function (a, i) {
       var media = a.img ? '<img src="' + esc(a.img) + '" alt="Certificate: ' + esc(a.title) + '" loading="lazy" />' : '<div class="ph">' + esc(a.badge) + "</div>";
@@ -266,8 +284,35 @@
   navLinks.addEventListener("click", function (e) {
     if (e.target.tagName === "A") { navLinks.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); }
   });
-  function onScroll() { nav.classList.toggle("scrolled", window.scrollY > 10); }
-  window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var bar = $("#progress"), hero = $(".hero"), photo = $(".hero-photo"), ticking = false;
+  function frame() {
+    ticking = false;
+    var y = window.scrollY, max = document.documentElement.scrollHeight - window.innerHeight;
+    nav.classList.toggle("scrolled", y > 10);
+    if (bar) bar.style.setProperty("--p", max > 0 ? Math.min(1, y / max).toFixed(4) : 0);
+    if (!reduce && hero && y < window.innerHeight * 1.2) {
+      hero.style.setProperty("--py", (y * 0.22).toFixed(1) + "px");
+      if (photo) photo.style.setProperty("--pp", (y * -0.06).toFixed(1) + "px");
+    }
+  }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }
+  window.addEventListener("scroll", onScroll, { passive: true }); window.addEventListener("resize", onScroll); frame();
+
+  /* card spotlight follows the pointer */
+  document.addEventListener("pointermove", function (e) {
+    var c = e.target.closest && e.target.closest(".pcard, .icard, .ccard, .xcard");
+    if (!c) return;
+    var r = c.getBoundingClientRect();
+    c.style.setProperty("--mx", (e.clientX - r.left) + "px"); c.style.setProperty("--my", (e.clientY - r.top) + "px");
+  }, { passive: true });
+
+  /* staggered entrance for grids */
+  ["#skills", "#infoGrid", "#compGrid", "#commGrid", "#exp", "#stats"].forEach(function (sel) {
+    var box = $(sel); if (!box) return;
+    Array.prototype.forEach.call(box.children, function (c, i) { c.classList.add("rise"); c.style.setProperty("--i", i); });
+  });
+  Array.prototype.forEach.call(pgrid.children, function (c) { c.classList.add("in"); });
 
   document.addEventListener("keydown", function (e) {
     if (viewer.classList.contains("open")) {
@@ -293,9 +338,19 @@
     var rev = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); rev.unobserve(en.target); } });
     }, { threshold: 0.06 });
+    document.querySelectorAll(".hero .rise").forEach(function (el) { setTimeout(function () { el.classList.add("in"); }, 120); });
+    var co = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return; co.unobserve(en.target);
+        var el = en.target, to = +el.getAttribute("data-count"), t0 = performance.now();
+        if (reduce) return;
+        (function step(t) { var k = Math.min(1, (t - t0) / 1100); el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); })(t0);
+      });
+    });
+    document.querySelectorAll("[data-count]").forEach(function (el) { el.textContent = "0"; co.observe(el); });
     document.querySelectorAll(".reveal").forEach(function (el) { rev.observe(el); });
   } else {
-    document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in"); });
+    document.querySelectorAll(".reveal, .rise").forEach(function (el) { el.classList.add("in"); });
   }
 
   route();

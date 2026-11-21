@@ -23,7 +23,8 @@ window.SITE = {
     instagram: "https://www.instagram.com/_chelseazz",
     email: "chelsealodar11@gmail.com",
     // Canva design with all infographics. Sharing must be set to "Anyone with the link can view".
-    canva: "https://www.canva.com/design/DAG7FaNw3yY/3uxODs2YcjQJPj2lSIWjDg/view"
+    canva: "https://www.canva.com/design/DAG7FaNw3yY/3uxODs2YcjQJPj2lSIWjDg/view",
+    canvaEmbed: "https://www.canva.com/design/DAG7FaNw3yY/3uxODs2YcjQJPj2lSIWjDg/view?embed"
   },
 
   skills: [
@@ -52,7 +53,7 @@ window.SITE = {
         bullets: [
           "Performed data validation, processing, and quality assurance to maintain data accuracy and consistency.",
           "Conducted data analysis and visualization to support operational reporting and decision-making.",
-          "Developed an internal web-based application for generating administrative documents, including billing letters, SPPL collection letters (SKR Bahl and SK WAP).",
+          "Developed an internal web-based application for generating administrative documents, including billing letters, SPPI, SK Ralat, and SK Wari.",
           "Contributed to backend and frontend development, including application architecture and database integration.",
           "Supported digital transformation initiatives through internal system development and process improvement.",
           "Managed digital data and documentation using internal information systems."
@@ -452,15 +453,17 @@ window.SITE = {
   ],
 
   infographics: [
-    { title: "Alam Rusak, Bencana Parah", tag: "Environment", img: "assets/img/g-alam-rusak.webp" },
-    { title: "Seberapa Terjamin Hidup di Indonesia?", tag: "Social", img: "assets/img/g-hidup-terjamin.webp" },
-    { title: "Potret Pendidikan Wilayah 3T", tag: "Education", img: "assets/img/g-pendidikan-3t.webp" },
-    { title: "Produksi Tanaman Perkebunan Indonesia 2014-2024", tag: "Agriculture", img: "assets/img/g-perkebunan.webp" },
-    { title: "Seberapa Besar Ekonomi Kota Surabaya?", tag: "Economy", img: "assets/img/g-ekonomi-surabaya.webp" },
-    { title: "Elastisitas Permintaan dan Pergeseran Pola Konsumsi Pasca Pandemi", tag: "Economy", img: "assets/img/g-elastisitas.webp" },
-    { title: "Dari Emisi Menuju Solusi, Microgrid berbasis IoT", tag: "Energy", img: "assets/img/g-microgrid.webp" },
-    { title: "Dari Buang ke Pilah (2013-2021)", tag: "Environment", img: "assets/img/g-buang-ke-pilah.webp" }
+    { title: "Alam Rusak, Bencana Parah", tag: "Environment", img: "assets/infographics/alam-rusak.webp" },
+    { title: "Seberapa Terjamin Hidup di Indonesia?", tag: "Social", img: "assets/infographics/hidup-terjamin.webp" },
+    { title: "Potret Pendidikan Wilayah 3T", tag: "Education", img: "assets/infographics/pendidikan-3t.webp" },
+    { title: "Produksi Tanaman Perkebunan Indonesia 2014-2024", tag: "Agriculture", img: "assets/infographics/perkebunan.webp" },
+    { title: "Dari Tandan Kembali ke Lahan", tag: "Environment", img: "assets/infographics/tandan-kembali-ke-lahan.webp" },
+    { title: "Seberapa Besar Ekonomi Kota Surabaya?", tag: "Economy", img: "assets/infographics/ekonomi-surabaya.webp" },
+    { title: "Elastisitas Permintaan dan Pergeseran Pola Konsumsi Pasca Pandemi", tag: "Economy", img: "assets/infographics/elastisitas.webp" },
+    { title: "Dari Emisi Menuju Solusi, Microgrid berbasis IoT", tag: "Energy", img: "assets/infographics/microgrid.webp" },
+    { title: "Dari Buang ke Pilah (2013-2021)", tag: "Environment", img: "assets/infographics/buang-ke-pilah.webp" }
   ],
+
 
   competitions: [
     {
