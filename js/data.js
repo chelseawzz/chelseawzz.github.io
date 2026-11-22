@@ -148,8 +148,8 @@ window.SITE = {
       "3rd Runner-Up Scientific Writing Competition (LKTI) 2025 | Politeknik Negeri Semarang",
       "Finalist, Statistic Dashboard Competition | Universitas Sebelas Maret",
       "Best Presentation Award, National Infographic Competition 2026 | Universitas Sriwijaya",
-      "Bronze Medal (2nd Place), MaHa Future Path Business Competition 2026 | Universitas Brawijaya",
-      "Finalist, Smart Data Competition 2026 | Universitas Syiah Kuala"
+      "Bronze Medal (2nd Place), MaFIA Future Path Industry Case Competition 2026 | Universitas Brawijaya",
+      "Finalist, Smart Data Analytics Competition 2026 | HIMAKA FEB, Universitas Syiah Kuala"
     ],
     skillsText: {
       technical: "Python (Pandas, Scikit-learn), SQL, Data Analysis, Data Cleaning, Exploratory Data Analysis (EDA), Machine Learning, Time Series Forecasting, Data Visualization (Tableau, Power BI, Looker Studio, Plotly Dash), Web Development (React, PHP), Database Management, Microsoft Office.",
@@ -476,19 +476,19 @@ window.SITE = {
     },
     {
       badge: "Bronze Medal",
-      title: "MaHa Future Path Business Competition 2026",
-      org: "Universitas Brawijaya",
-      date: "2026",
-      desc: "Bronze Medal (2nd Place).",
-      img: ""
+      title: "Industry Case Competition, MaFIA Future Path 2026",
+      org: "Faculty of Administrative Sciences, Universitas Brawijaya",
+      date: "15 August - 25 September 2026",
+      desc: "Bronze Medal (2nd Place). Theme: Navigate Career Paths Through Skills and Innovation.",
+      img: "assets/img/a-mafia-bronze.webp"
     },
     {
       badge: "Finalist",
-      title: "Smart Data Competition 2026",
-      org: "Universitas Syiah Kuala",
-      date: "2026",
-      desc: "Finalist.",
-      img: ""
+      title: "Smart Data Analytics Competition 2026",
+      org: "HIMAKA FEB, Universitas Syiah Kuala",
+      date: "18 - 23 October 2026",
+      desc: "Finalist at Pekan Ilmiah Akuntansi XXIX 2026, Banda Aceh. Theme: Smart Analytics for a Sustainable and Resilient Future.",
+      img: "assets/img/a-smart-data-usk.webp"
     },
     {
       badge: "Finalist",
